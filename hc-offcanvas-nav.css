@@ -727,3 +727,49 @@ body.hc-nav-open {
 .hc-offcanvas-nav.rtl .nav-wrapper-5 li.nav-item .nav-item-link {
   padding-right: calc(17px + 20px * 5);
 }
+
+
+
+/* First Level Always Expanded */
+.first-level-expanded .nav-wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.first-level-expanded .nav-content > .nav-item {
+  display: block !important;
+  position: relative !important;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  padding-left: 0;
+}
+
+.first-level-expanded .nav-content > .nav-item > .nav-item-wrapper {
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.first-level-expanded .nav-content > .nav-item > .nav-item-wrapper > a {
+  font-weight: bold;
+  color: #0077cc;
+}
+
+/* Nested Levels Overlap */
+.first-level-expanded .nav-content .nav-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.first-level-expanded .nav-content .nav-content.nav-open {
+  transform: translateX(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .first-level-expanded .nav-content > .nav-item >

@@ -2397,14 +2397,15 @@ body.theme-default .hc-offcanvas-nav .second-nav {
 }
 
 span.important {
-  font-size: 80%;
-  line-height: 15px;
+  font-size: 130%;
+  line-height: 18px;
   height: 15px;
-  padding: 0 4px;
+  padding: 10px 2px;
   /* float: right; */
   background: #ff635a;
-  border-radius: 2px;
+  border-radius: 4px;
   margin-top: 2px;
+  color:#fff
 }
 
 .material-symbols-outlined {
