@@ -2407,6 +2407,17 @@ span.important {
   margin-top: 2px;
   color:#fff
 }
+span.important2 {
+  font-size: 80%;
+  line-height: 18px;
+  height: 15px;
+  padding: 10px 2px;
+  /* float: right; */
+  background: #ff635a;
+  border-radius: 4px;
+  margin-top: 2px;
+  color:#fff
+}
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;

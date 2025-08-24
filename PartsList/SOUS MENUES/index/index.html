@@ -17,27 +17,7 @@
   <body>
     <div id="main">
       <div id="setup">
-        <h4>Programmable Logic Controllers</h4>
-        <!-- <ul class="slider" id="slider1">
-          <li><img src="imgs/IMG_20250327_165232.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240319_155248.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240319_161101.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240319_161254.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240720_163941.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240209_124005.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240209_124155.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240228_155235.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240209_140544.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20250327_150706.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240209_135140.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240216_135336.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240209_141437.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20250501_173243.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240209_131405.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240209_130928.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20240720_173822.jpg" alt="" /></li>
-          <li><img src="imgs/IMG_20210826_131432.jpg" alt="" /></li>
-        </ul> -->
+        <h4>Programmable Logic Controllers</h4>        
         <div class="cont">
           <div class="one">
             <h3>Siemens Simatic S7 PLC</h3>
@@ -153,7 +133,7 @@
           <li><img src="imgs/IMG_20240515_175609.jpg" alt="" /></li>
           <li><img src="imgs/IMG_20240209_131604.jpg" alt="" /></li>
         </ul>
-        <h4>Contactors</h4>
+        <h4 id = "Contactors">Contactors</h4>
         <ul class="slider" id="slider2">
           <li><img src="imgs/IMG_20240303_161022.jpg" alt="" /></li>
           <li><img src="imgs/IMG_20240301_181942.jpg" alt="" /></li>
@@ -175,7 +155,7 @@
           <li><img src="imgs/IMG_20240229_104157.jpg" alt="" /></li>
           <li><img src="imgs/IMG_20240303_153527.jpg" alt="" /></li>
         </ul>
-        <h4>Relays</h4>
+        <h4 id = "Relays">Relays</h4>
         <div class="cont">
           <div class="one">
             <h3>Mechanical Relays</h3>
@@ -239,7 +219,7 @@
           </div>
         </div>
 
-        <h4>Switches</h4>
+        <h4 id = "Switches">Switches</h4>
         <div class="cont">
           <div class="one">
             <h3>PROXIMITY SWITCHES & PHOTOSENSORS</h3>
@@ -306,7 +286,7 @@
             </ul>
           </div>
         </div>
-        <h4>Sensors & Sensors Controllers</h4>
+        <h4 id = "Sensors">Sensors & Sensors Controllers</h4>
         <div class="cont">
           <div class="one">
             <h3>Sensors</h3>
@@ -372,7 +352,7 @@
             </ul>
           </div>
         </div>
-        <h4>Protection Technologies</h4>
+        <h4 id = "Protection">Protection Technologies</h4>
         <div class="cont">
           <div class="one">
             <h3>Circuit Breakers</h3>
@@ -447,7 +427,7 @@
             </ul>
           </div>
         </div>
-        <h4>Electronic Parts & Devices</h4>
+        <h4 id = "Electronic">Electronic Parts & Devices</h4>
         <div class="cont">
           <div class="one">
             <h3>Integrated Circuits</h3>
@@ -746,7 +726,13 @@
     </div>
     <footer>
       <p>
-        <a href="#main" target="">Go to Top</a>
+        <a href="#main" target="">PLCs</a> | 
+        <a href="#Contactors" target="">Contactors</a> | 
+        <a href="#Relays" target="">Relays</a> | 
+        <a href="#Switches" target="">Switches</a> | 
+        <a href="#Sensors" target="">Sensors & Sensor Controllers</a> | 
+        <a href="#Protection" target="">Protection Technologies</a> | 
+        <a href="#Electronic" target="">Electronic Parts & Devices</a>        
       </p>
     </footer>
 
@@ -1051,7 +1037,7 @@
 
           $("html, body").animate(
             {
-              scrollTop: targetOffset,
+              scrollTop: targetOffset - 25,
             },
             1000
           ); // Animate scroll over 1000 milliseconds (1 second)
